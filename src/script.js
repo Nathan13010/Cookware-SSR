@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+we import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import * as dat from 'lil-gui';
@@ -153,14 +153,14 @@ const gtaoPass = new GTAOPass(scene, camera, sizes.width, sizes.height);
 const aoParameters = {
   radius: 0.018,
   distanceExponent: 1,
-  thickness: 5,
+  thickness: 0.1,
   scale: 2,
   samples: 16,
   distanceFallOff: 1.,
   screenSpaceRadius: false,
 };
 const pdParameters = {
-  lumaPhi: 5.,
+  lumaPhi: 20.,
   depthPhi: 2.,
   normalPhi: 3.,
   radius: 4.,
