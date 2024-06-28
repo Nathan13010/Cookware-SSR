@@ -59,19 +59,6 @@ gltfLoader.load("/pot.glb", (gltf) => {
   console.error(error);
 });
 
-// ground reflector
-let groundGeometry = new THREE.PlaneGeometry(100, 100);
-let groundMaterial = new THREE.MeshLambertMaterial({ color: 0x999999 });
-let ground = new Reflector(groundGeometry, {
-  clipBias: 0.003,
-  textureWidth: window.innerWidth * window.devicePixelRatio,
-  textureHeight: window.innerHeight * window.devicePixelRatio,
-  color: 0x777777,
-  recursion: 1
-});
-ground.rotateX(- Math.PI / 2);
-ground.position.y = 0;
-scene.add(ground);
 
 
 // // Lights
